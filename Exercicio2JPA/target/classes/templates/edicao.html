@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+	<link type="text/css" rel="stylesheet" href="materialize/css/materialize.min.css" media="screen,projection" />
+	<title>Edição</title>
+</head>
+
+<body>
+	<h3> Cadastro </h3>
+	<form th:action="@{/cadastro}" method="post" th:object="${comida}">
+
+		<label>ID</label>
+		<input type="text" th:field="*{id}" readonly />
+
+		<label for="idculinaria">Culinaria</label>
+		<input id="idculinaria" type="text" placeholder="Informe culinaria" th:field="*{culinaria}" />
+
+		<label for="idnome">Nome</label>
+		<input id="idnome" type="text" placeholder="Informe nome" th:field="*{nome}" />
+
+		<label for="idpreco">Preco</label>
+		<input id="idpreco" type="text" placeholder="Informe preco" th:field="*{preco}" />
+
+		<button class="btn waves-effect waves-ligth">Salvar</button>
+
+	</form>
+	<script type="text/javascript" src="materialize/js/materialize.min.js"></script>
+
+</body>
+
+</html>
