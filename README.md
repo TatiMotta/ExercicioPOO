@@ -7,6 +7,6 @@ nome varchar (30),
 preco decimal (10,2)
 )
 
-#Exercício02
+#Exercício02 - JPA
 
 #Exercício03 - ApiRest
